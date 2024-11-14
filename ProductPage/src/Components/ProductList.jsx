@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
 import truncateString from "../utils/truncateString";
 
+
 // in order to use the context I create I must import the context and import the useContext hook from react
 const ProductList = () => {
   // when you want to pull something from the global state context you just use object destructuring.

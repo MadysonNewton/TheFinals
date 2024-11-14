@@ -3,11 +3,14 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProductList from "./Components/ProductList";
 import ProductDetails from "./Components/ProductDetails";
-import Cart from "./components/Cart";
+import Cart from "./Components/Cart";
 import { ProductProvider } from "./context/ProductContext";
+import {CartProvider} from "./context/CartContext"
 
 function App() {
   return (
+   
+    <CartProvider>
     <ProductProvider>
       <BrowserRouter>
         <Navbar />
@@ -20,6 +23,8 @@ function App() {
         </Routes>
       </BrowserRouter>
     </ProductProvider>
+    </CartProvider>
+   
   );
 }
 

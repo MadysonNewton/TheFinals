@@ -2,6 +2,7 @@
 import { createContext, useState, useEffect } from "react";
 import { getProducts } from "../utils/apis";
 
+
 // The first thing we need to do when creating a Context Global State is use the createContext() function form React to create it.
 const ProductContext = createContext();
 
